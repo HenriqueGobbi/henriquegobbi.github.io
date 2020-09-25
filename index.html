@@ -8,13 +8,17 @@
   <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
   
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+    <a-scene embedded arjs>
       <a-marker type="pattern" url="https://raw.githubusercontent.com/HenriqueGobbi/henriquegobbi.github.io/master/padrao3.patt">
-        <a-box position="0 0 0" rotation="0 45 0" scale="1 1 1" color="red"></a-box>
+        <a-box position="0 0 0" rotation="45 0 0" scale="1 1 1" color="red"></a-box>
         <!--<a-entity
           position="0 0 0"
           scale="1 1 1"
-          gltf-model="https://raw.githubusercontent.com/HenriqueGobbi/henriquegobbi.github.io/model/scene.gltf"></a-entity>-->
+          gltf-model="https://raw.githubusercontent.com/HenriqueGobbi/henriquegobbi.github.io/model/scene.gltf"></a-entity>
+='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+-->
+
+
       </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
